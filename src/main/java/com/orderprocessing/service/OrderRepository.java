@@ -1,12 +1,12 @@
 package com.orderprocessing.service;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Repository;
 
 import com.orderprocessing.model.Order;
 
 
-@Transactional
+@Repository
 public interface OrderRepository extends CrudRepository<Order, Long>{
 
 }
